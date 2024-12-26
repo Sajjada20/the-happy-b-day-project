@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  /* Popup styles */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden; /* Initially hidden */
+  }
+  
+  .popupContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px; /* Ensures it doesn't exceed 400px */
+    text-align: center;
+  }
+  
+  .popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup button {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .popup button:hover {
+    background: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .popupContent {
+      padding: 15px;
+      max-width: 80%; /* Takes 80% of the screen width on smaller devices */
+    }
+  
+    .popup input {
+      padding: 8px;
+    }
+  
+    .popup button {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .popupContent {
+      max-width: 90%; /* Takes 90% of the screen width on very small devices */
+      padding: 10px;
+    }
+  
+    .popup input {
+      padding: 6px;
+    }
+  
+    .popup button {
+      padding: 6px;
+    }
+  }
+  
